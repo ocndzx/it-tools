@@ -44,16 +44,59 @@
     />
     <meta name="twitter:image" content="https://it-tools.tech/banner.png?v=2" />
     <meta name="twitter:image:alt" content="IT Tools - Handy online tools for developers" />
+
+    <!-- 备案号美化样式表 -->
+    <style>
+      .site-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 30px 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        color: #64748b; /* 优雅的灰蓝色，适配亮暗主题 */
+        background-color: transparent;
+      }
+      .site-footer .footer-link {
+        color: #64748b;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.25s ease, border-bottom-color 0.25s ease;
+        border-bottom: 1px dashed transparent;
+        padding-bottom: 1px;
+      }
+      .site-footer .footer-link:hover {
+        color: #18a058; /* IT Tools 官方品牌绿色 */
+        border-bottom-color: #18a058;
+      }
+      .site-footer .divider {
+        color: #cbd5e1;
+        user-select: none;
+      }
+      @media (max-width: 480px) {
+        .site-footer {
+          flex-direction: column;
+          gap: 6px;
+        }
+        .site-footer .divider {
+          display: none;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
 
-    <!-- ICP备案号（放在 body 内部） -->
-    <footer style="text-align:center; padding: 20px 0; font-size:14px; color:#888;">
-      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
-        京ICP备12345678号
+    <!-- ICP备案号（美化版页脚） -->
+    <footer class="site-footer">
+      <span>© 2024 IT Tools. All rights reserved.</span>
+      <span class="divider">|</span>
+      <a class="footer-link" href="https://sdca.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+        鲁ICP备2026047574号
       </a>
     </footer>
   </body>
