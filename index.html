@@ -66,12 +66,10 @@
         align-items: center;
         color: #64748b; /* 优雅的灰蓝色，适配亮暗主题 */
       }
-      .footer-link.footer-pad.last img,
-      .footer-link.footer-pad.last svg {
+      .footer-link.footer-pad.last img {
         vertical-align: middle;
         width: 16px; /* 统一小图标尺寸 */
         height: 16px;
-        flex-shrink: 0;
       }
       .footer-link.footer-pad.last a {
         color: #64748b;
@@ -95,22 +93,16 @@
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
 
-    <!-- ICP备案号（全部使用网络在线图片/代码绘图，无需本地图片文件） -->
+    <!-- 备案号组件（直接引用官方网络图标，零本地依赖） -->
     <div class="footer-link footer-pad last">
 			<p>
 				<span>
-          <!-- 使用高清晰度 SVG 矢量图直接画出工信部网站图标（无需下载，永远不丢） -->
-          <svg viewBox="0 0 1024 1024" version="1.1" xmlns="https://ywtb.mps.gov.cn/authservice/images/foot-icp.png" style="margin-right:5px;">
-            <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64z m165.5 617.9c-14.7 20.3-43.1 24.8-63.4 10.1L512 618.1l-102.1 73.9c-20.3 14.7-48.7 10.1-63.4-10.1-14.7-20.3-10.1-48.7 10.1-63.4L452.1 512l-95.5-69.2c-20.3-14.7-24.8-43.1-10.1-63.4 14.7-20.3 43.1-24.8 63.4-10.1L512 443.2l102.1-73.9c20.3-14.7 48.7-10.1 63.4 10.1 14.7 20.3 10.1 48.7-10.1 63.4L571.9 512l95.5 69.2c20.3 14.7 24.8 43.1 10.1 63.4z" fill="#64748b"></path>
-          </svg>
-          <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备05xxxxx602号-6</a>
+					<img alt="ICP备案" src="https://ywtb.mps.gov.cn/authservice/images/foot-icp.png" style="margin-right:5px;"><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备05xxxxx602号-6</a>
 				</span>
 			</p>
 			<p>
 				<span>
-          <!-- 直接引用公安部官方永久静态图片链接（免去本地存图，直接读取） -->
-					<img alt="公安网备" src="https://ywtb.mps.gov.cn/authservice/images/foot-ga.png" style="margin-right:5px;">
-          <a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010102000001" target="_blank">京公网安备 1101xxxxx01号</a>
+					<img alt="公安网备" src="https://ywtb.mps.gov.cn/authservice/images/foot-ga.png" style="margin-right:5px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010102000001" target="_blank">京公网安备 1101xxxxx01号</a>
 				</span>
 			</p>
 		</div>
